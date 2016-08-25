@@ -43,6 +43,10 @@ body, html {
     height:800px;
 }
 
+#fridge-list-title {
+    background-color: blue;
+}
+
 
 #srb-searchbar {
     width: 330px;
