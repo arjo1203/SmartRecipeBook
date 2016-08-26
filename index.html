@@ -7,43 +7,86 @@
         <link rel="stylesheet" type="text/css" href="./resources/css/default.css">
     </head> 
     <body> 
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default" id="smart-recipe-book-navbar">
             <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Smart Recipe Book</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <div class="navbar-form" width="330px">
-                    <div class="form-group">
-                        <input id="srb-searchbar" type="text" class="form-control" placeholder="Search by: Ingredient, Recipe, Meal, Fridge List Item">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                    
-                    <button type="button" class="btn btn-default navbar-btn navbar-right">Account Settings</button>
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Smart Recipe Book</a>
                 </div>
-                                
-            </div><!-- /.navbar-collapse -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="navbar-form" width="330px">
+                        <button type="button" class="btn btn-default navbar-btn navbar-right">Account Settings</button>
+                        <div id="srb-searchbar-form">
+                            <div class="form-group">
+                                <input id="srb-searchbar" type="text" class="form-control" placeholder="Search by: Ingredient, Recipe, Meal, Fridge List Item">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                        
+                    </div>
+                                    
+                </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
-            </nav>
+        </nav>
+
+        <div class="container" id="smart-recipe-book">
+            <div class="row" id="smart-recipe-book-lists">
+                <div class="col-sm-2" id="fridge-list-container">
+                    <div class="page-header text-center" id="fridge-list-title">
+                        <h1 id="fridge-list-title-header">Fridge List</h1>
+                    </div>
+                    <div id="fridge-list">
+                        <p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-8" id="recipe-list-container">
+                    <div class="page-header text-center" id="recipe-list-title">
+                        <h1 id="recipe-list-title-header">Recipe List</h1>
+                    </div>
+                    <div id="recipe-list">
+                        <p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p>
+                    </div>
+                </div> 
 
 
-        <div class="row" id="smart-recipe-book">
-            <div class="col-sm-2" id="fridge-list">
-                <h3 id="fridge-list-title">Fridge List</h3>
-                <p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p><p>Fridge List Item</p>
-            </div>
+                <div class="col-sm-2" id="shopping-list-container">
+                    <div class="page-header text-center" id="shopping-list-title">
+                        <h1 id="shopping-list-title-header">Shopping List</h1>
+                    </div>
+                    <div id="shopping-list">
+                        <p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p>
+                    </div>
+                </div>  
 
-            <div class="col-sm-8" id="recipe-list">
-                <p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p><p>Recipe</p>
-            </div>   
+            </div><!--smart-recipe-book-->
+        </div><!--container-->
 
-            <div class="col-sm-2" id="shopping-list">
-                <p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p><p>Shopping List Item</p>
-            </div>
-        </div>
+
+
+        <script src="./vendors/jquery/jquery-3.1.0.js" type="text/javascript"></script>
+        <script src="./resources/js/jqueryExtensions.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $("#srb-searchbar-form").center('width');
+
+            setListSizes()
+
+            function setListSizes() {
+                console.log(window.innerHeight);
+                console.log($("#smart-recipe-book-navbar")[0].clientHeight);
+                console.log($("#fridge-list-title")[0].clientHeight);
+                var listHeight = window.innerHeight - $("#smart-recipe-book-navbar")[0].clientHeight - $("#fridge-list-title")[0].clientHeight - 24;
+                $("#smart-recipe-book").height(listHeight);
+            }
+
+            window.onresize = function(event) {
+                // console.log("resizing");
+            $("#srb-searchbar-form").center('width');
+                setListSizes();
+            };
+        </script>
 
     </body> 
 </html>
