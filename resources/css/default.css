@@ -1,7 +1,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
   height:100%;
 }
 
@@ -9,42 +9,60 @@ body, html {
     margin-bottom: 0;
 }
 
-@media (min-width: 768px){
-  #recipe-list {
+@media screen and (max-width: 768px){
+  #fridge-list-container {
+    height: 200px;
+  }
+  #fridge-list {
     overflow-y: scroll; 
+    height: 200px;
   }
 }
 
-#smart-recipe-book {
+#smart-recipe-book, #smart-recipe-book-lists {
     width: 100%;
     height: 100%;
-    margin: auto;      /*Stretches row fully across screen*/
+    margin: auto;       /*Stretches row fully across screen*/
+    padding: 0;         /*Stretches list fully across screen*/
     position: absolute;
+}
+
+
+#fridge-list-container, #recipe-list-container, #shopping-list-container {
+    padding: 0;         /*Stretches list fully across screen*/
+    height: 100%;       /*Required to allow #fridge-list to scroll*/
 }
 
 #fridge-list {
     position: relative;
     overflow-y: scroll; 
     text-align: center;
+    padding: 0;         /*Stretches list fully across screen*/
     height: 100%;
 }
+
 
 #recipe-list {
     position: relative;
     overflow-y: scroll; 
     text-align: center;
-    height:800px;
+    padding: 0;         /*Stretches list fully across screen*/
+    height: 100%;
 }
 
 #shopping-list {
-    overflow-y: scroll; 
     position: relative;
+    overflow-y: scroll; 
     text-align: center;
-    height:800px;
+    padding: 0;         /*Stretches list fully across screen*/
+    height: 100%;
 }
 
-#fridge-list-title {
-    background-color: blue;
+#fridge-list-title, #fridge-list-title-header,
+#recipe-list-title, #recipe-list-title-header,
+#shopping-list-title, #shopping-list-title-header {
+    margin: 10px;       /*Stretches row fully across screen*/
+    padding: 0;         /*Stretches list fully across screen*/
 }
 
 
