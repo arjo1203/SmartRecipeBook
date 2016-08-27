@@ -8,8 +8,18 @@ body, html {
 .navbar {
     margin-bottom: 0;
 }
+.img-responsive {
+    margin: 0 auto;
+}
 
-@media screen and (max-width: 768px){
+.recipe-container {
+    padding: 10px;
+}
+.stretch {
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 400px){
   #fridge-list-container {
     height: 200px;
   }
@@ -38,29 +48,22 @@ body, html {
     height: 100%;       /*Required to allow #fridge-list to scroll*/
 }
 
-#fridge-list {
+.list {
     position: relative;
-    overflow-y: scroll; 
+    overflow-y: auto; 
     text-align: center;
     padding: 0;         /*Stretches list fully across screen*/
     height: 100%;
+}
+
+#fridge-list {
 }
 
 
 #recipe-list {
-    position: relative;
-    overflow-y: scroll; 
-    text-align: center;
-    padding: 0;         /*Stretches list fully across screen*/
-    height: 100%;
 }
 
 #shopping-list {
-    position: relative;
-    overflow-y: scroll; 
-    text-align: center;
-    padding: 0;         /*Stretches list fully across screen*/
-    height: 100%;
 }
 
 #fridge-list-title, #fridge-list-title-header,
