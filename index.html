@@ -69,22 +69,25 @@
         <script src="./vendors/jquery/jquery-3.1.0.js" type="text/javascript"></script>
         <script src="./resources/js/jqueryExtensions.js" type="text/javascript"></script>
         <script type="text/javascript">
-            $("#srb-searchbar-form").center('width');
+            init();
+            function init() {
+                update();
+            }
 
-            setListSizes()
+            function update() {
+                $("#srb-searchbar-form").center('width');
+                setListSizes();
+            }
 
             function setListSizes() {
-                console.log(window.innerHeight);
-                console.log($("#smart-recipe-book-navbar")[0].clientHeight);
-                console.log($("#fridge-list-title")[0].clientHeight);
-                var listHeight = window.innerHeight - $("#smart-recipe-book-navbar")[0].clientHeight - $("#fridge-list-title")[0].clientHeight - 24;
-                $("#smart-recipe-book").height(listHeight);
+                var listHeight = window.innerHeight - $("#smart-recipe-book-navbar")[0].clientHeight + $("#fridge-list-title")[0].clientHeight;
+                $("#fridge-list").height(listHeight);
+                $("#recipe-list").height(listHeight);
+                $("#shopping-list").height(listHeight);
             }
 
             window.onresize = function(event) {
-                // console.log("resizing");
-            $("#srb-searchbar-form").center('width');
-                setListSizes();
+                update();
             };
         </script>
 
