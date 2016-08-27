@@ -19,12 +19,17 @@ body, html {
   }
 }
 
-#smart-recipe-book, #smart-recipe-book-lists {
+#smart-recipe-book {
     width: 100%;
     height: 100%;
     margin: auto;       /*Stretches row fully across screen*/
     padding: 0;         /*Stretches list fully across screen*/
     position: absolute;
+}
+
+#smart-recipe-book-lists {
+    margin: auto;       /*Stretches row fully across screen*/
+    padding: 0;         /*Stretches list fully across screen*/
 }
 
 
@@ -61,8 +66,8 @@ body, html {
 #fridge-list-title, #fridge-list-title-header,
 #recipe-list-title, #recipe-list-title-header,
 #shopping-list-title, #shopping-list-title-header {
-    margin: 10px;       /*Stretches row fully across screen*/
-    padding: 0;         /*Stretches list fully across screen*/
+    margin: 0;       /*Stretches row fully across screen*/
+    padding: 10px;         /*Stretches list fully across screen*/
 }
 
 
